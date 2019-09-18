@@ -8,14 +8,23 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
 - Am Anfang wird eine Begrüßungsnachricht angezeigt: "Willkommen beim DCI-Quiz! Bist du bereit, dich meinen Fragen zu stellen?"
 - Es werden zwei mögliche Antworten vorgeschlagen: "a. Halt die Klappe und leg endlich los!", "b. Lass mal, ich will nicht denken."
 - Der Spieler kann "a" oder "b" eingeben. Bei "a" wird die erste Frage angezeigt
-- Die Quiz-Fragen können Multiple-Choice-Fragen sein, wie die Begrüßungsfrage oder Freitext-Fragen, für die der Spieler ein Wort als Antwort schreiben muss.
+- Die Quiz-Fragen sind Multiple-Choice-Fragen, so wie die Begrüßungsfrage. Es kann zwei oder mehr mögliche Antworten geben.
 
 
 ## Aufgaben Partner A
 - Arbeite in der Datei questions.js
 - Erstell ein "questions"-Objekt
-- Es soll die Methode "getQuestion" haben. Diese Methode hat einen Parameter für die Nummer der Frage und gibt den String der entsprechenden Frage zurück
-- Es soll die Methode "checkAnswer" haben. Diese Methode soll einen Parameter für die Antwort haben und true oder false zurückgeben, je nach dem ob die Antwort richtig ist
+- Es soll die Eigenschaft "questionsList" haben, in der Ein Array mit Fragen-Objekten gespeichert wird
+  - Fragen-Objekte haben:
+    - die Eigenschaft "question" mit einem String, in dem die Frage steht
+    - die Eigenschaft "answers" mit einem Array der Strings für die möglichen Antworten
+- Es soll die Methode "getQuestion" haben. Diese Methode soll:
+  - Einen Parameter für die Nummer der Frage haben
+  - Das Objekt der entsprechenden Frage zurückgeben
+- Es soll die Methode "checkAnswer" haben. Diese Methode soll:
+  - Einen Parameter für die Nummer der Frage haben
+  - Einen Parameter für die Antwort haben
+  - true oder false zurückgeben, je nach dem ob die Antwort richtig ist
 
 ## Aufgaben Partner B
 - Arbeite in der Datei interface.js
@@ -29,6 +38,12 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
   - Ein prompt mit der Frage stellen
   - Die Antwort mit der "checkAnswer"-Methode des questions-Objekts prüfen
   - Speichern, ob die Antwort richtig war
+- Erstell eine Schleife damit die Fragen dem Spieler nacheinander angezeigt werden
+
+## Bonus
+- Fügt die Möglichkeit hinzu, Freitext-Fragen zu benutzen, bei denen der Spieler ein Wort als Antwort eingeben kann
+- Dafür muss die "checkAnswer"-Methode geändert werden, so dass sie auch diese Antworten prüfen kann
+- Es kann eine Kondition hinzugefügt werden: Wenn es nur eine mögliche Antwort gibt, handelt es sich um eine Freitext-Frage
 
 ## Hilfe
 ###### Objekt erstellen
@@ -36,4 +51,16 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
 var name = {
   property: value,
 }
+```
+###### Methode erstellen
+```javascript
+var objectName = {
+  methodName: function(parameter) {
+    
+  }
+}
+```
+###### Methode verwenden
+```javascript
+objectName.methodName(value)
 ```

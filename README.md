@@ -18,6 +18,7 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
   - Fragen-Objekte haben:
     - die Eigenschaft "question" mit einem String, in dem die Frage steht
     - die Eigenschaft "answers" mit einem Array der Strings für die möglichen Antworten
+    - die Eigenschaft "correctAnswers" mit einem Array in dem die Nummern der richtigen Antworten gespeichert sind (nur eine Nummer, wenn es nur eine Richtige Antwort gibt)
 - Es soll die Methode "getQuestion" haben. Diese Methode soll:
   - Einen Parameter für die Nummer der Frage haben
   - Das Objekt der entsprechenden Frage zurückgeben
@@ -37,6 +38,7 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
   - Die nächste Frage mit der "getQuestion"-Methode des questions-Objekts holen
   - Ein prompt mit der Frage stellen
   - Die Antwort mit der "checkAnswer"-Methode des questions-Objekts prüfen
+  - Das Ergebnis in einem alert ausgeben: "Richtig!" oder "Das war leider falsch."
   - Speichern, ob die Antwort richtig war
 - Erstell eine Schleife damit die Fragen dem Spieler nacheinander angezeigt werden
 

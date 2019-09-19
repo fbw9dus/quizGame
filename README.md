@@ -36,11 +36,12 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
   - Wieviele Fragen hat der Spieler richtig beantwortet
 - Füg die Methode "askQuestion" hinzu. Diese Methode soll:
   - Die nächste Frage mit der "getQuestion"-Methode des questions-Objekts holen
-  - Ein prompt mit der Frage stellen
+  - Ein prompt mit der Frage und den möglichen Antworten öffnen
   - Die Antwort mit der "checkAnswer"-Methode des questions-Objekts prüfen
   - Das Ergebnis in einem alert ausgeben: "Richtig!" oder "Das war leider falsch."
   - Speichern, ob die Antwort richtig war
 - Erstell eine Schleife damit die Fragen dem Spieler nacheinander angezeigt werden
+- Wenn es keine Fragen mehr gibt, soll in einem alert ausgegeben werden, wieviele Fragen richtig beantwortet wurden
 
 ## Bonus
 - Fügt die Möglichkeit hinzu, Freitext-Fragen zu benutzen, bei denen der Spieler ein Wort als Antwort eingeben kann

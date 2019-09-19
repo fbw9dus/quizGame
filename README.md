@@ -40,7 +40,7 @@ Das Projekt soll in Zweier-Gruppen programmiert werden.
   - Die Antwort mit der "checkAnswer"-Methode des questions-Objekts prüfen
   - Das Ergebnis in einem alert ausgeben: "Richtig!" oder "Das war leider falsch."
   - Speichern, ob die Antwort richtig war
-- Erstell eine Schleife damit die Fragen dem Spieler nacheinander angezeigt werden
+- Erstell in der startGame-Methode eine Schleife damit die Fragen dem Spieler nacheinander angezeigt werden
 - Wenn es keine Fragen mehr gibt, soll in einem alert ausgegeben werden, wieviele Fragen richtig beantwortet wurden
 
 ## Bonus
